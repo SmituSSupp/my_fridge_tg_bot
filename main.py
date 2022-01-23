@@ -18,6 +18,8 @@ def main() -> None:
         fallbacks=[CommandHandler('close_fridge', close_fridge)],
     )
 
+    start_handler = CommandHandler('start', start)
+
     dispatcher.add_handler(fridge_handler)
 
     # Start the Bot
