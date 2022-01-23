@@ -32,6 +32,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 FRIDGE_ACTION_SELECTION, FOOD_EXPORT_IMPORT = range(2)
+COOKBOOK_ACTION_SELECTION, ADD_RECIPE, SHOW_ALL_RECIPES, SHOW_CAT_RECIPES, WHAT_CAN_I_DO = range(10, 16)
 
 
 def start(update: Update, context: CallbackContext) -> int:
